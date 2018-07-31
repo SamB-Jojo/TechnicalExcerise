@@ -4,7 +4,6 @@ import com.mailChimp.example.domain.Leader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 

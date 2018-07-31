@@ -4,7 +4,6 @@ import com.mailChimp.example.domain.Leader;
 import com.mailChimp.example.pageObject.MailChimpAboutPageObject;
 import com.mailChimp.example.pageObject.MailChimpPageObject;
 import com.mailChimp.example.util.WriteToCSVFile;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,7 +29,7 @@ public class LeadershipNamesTitleDescriptionsCanBeDownloadedIntoCSVFileSteps {
     private MailChimpAboutPageObject aboutPage;
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sams\\Documents\\TechnicalExcerise\\src\\test\\resources\\tools\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\tools\\chromedriver.exe");
         driver = new ChromeDriver();
         page = new MailChimpPageObject(driver);
     }
