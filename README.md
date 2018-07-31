@@ -1,4 +1,4 @@
-##Technical Exercise
+## Technical Exercise
 
 Created an UI Automation test to:
 1. Start scenario on https://mailchimp.com/
