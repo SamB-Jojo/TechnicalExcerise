@@ -3,6 +3,7 @@ package com.mailChimp.example.steps;
 import com.mailChimp.example.domain.Leader;
 import com.mailChimp.example.pageObject.MailChimpAboutPageObject;
 import com.mailChimp.example.pageObject.MailChimpPageObject;
+import com.mailChimp.example.util.WriteToCSVFile;
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -55,9 +56,8 @@ public class LeadershipNamesTitleDescriptionsCanBeDownloadedIntoCSVFileSteps {
     }
 
     @Then("^information can be stored to a csv file$")
-    public void information_can_be_stored_to_a_csv_file() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void information_can_be_stored_to_a_csv_file()  {
+        WriteToCSVFile.writeLeadershipInfoToFile(leadership);
     }
 
     @After
