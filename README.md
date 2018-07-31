@@ -1,6 +1,7 @@
 ## Technical Exercise
 
 Created an UI Automation test to:
+
 1. Start scenario on https://mailchimp.com/
 2. Navigate to MailChimps about page
 3. Save each leadership team members name, position, and description into a .csv file.
